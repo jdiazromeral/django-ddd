@@ -31,7 +31,8 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Topic :: Software Development :: Libraries",
         "Topic :: Software Development :: Libraries :: Python Modules",
-        "Topic :: Software Development :: Quality Assurance" "Topic :: Utilities",
+        "Topic :: Software Development :: Quality Assurance",
+        "Topic :: Utilities",
     ],
     python_requires=">=3.8",
 )
