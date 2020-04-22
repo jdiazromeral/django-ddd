@@ -1,4 +1,4 @@
-![Django CI](https://github.com/jdiazromeral/django-ddd/workflows/Django%20CI/badge.svg?branch=master)
+![Django CI](https://github.com/jdiazromeral/django-ddd/workflows/Django%20CI/badge.svg)
 
 # Django the Domain Driven Design way 
 This is a proof of concept to model django apps on a domain driven design way.
