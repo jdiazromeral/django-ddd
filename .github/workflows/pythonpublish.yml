@@ -6,16 +6,18 @@ on:
 
 jobs:
   deploy:
+
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
         python-version: '3.8'
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
+        python -m pip install --upgrae pip
         pip install setuptools wheel twine
     - name: Build and publish
       env:
