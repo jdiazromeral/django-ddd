@@ -25,7 +25,7 @@ python setup.py install
 Or install with pip
 
 ```bash
-python ...
+pip install django-ddd
 ```
 
 ## Configuration
