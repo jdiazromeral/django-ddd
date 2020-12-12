@@ -11,4 +11,4 @@ django = "~=3.0.7"
 twine = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3.9"
