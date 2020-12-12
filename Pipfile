@@ -4,7 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-ipython = "==7.13.0"
+ipython = "==7.19.0"
 
 [packages]
 django = "~=3.0.7"
