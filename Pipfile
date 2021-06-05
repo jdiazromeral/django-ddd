@@ -7,7 +7,7 @@ verify_ssl = true
 ipython = "==7.19.0"
 
 [packages]
-django = "~=3.2"
+django = ">=3.2.1"
 twine = "*"
 
 [requires]
