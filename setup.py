@@ -3,7 +3,7 @@ from setuptools import setup
 with open("README.md", "r") as readme:
     README = readme.read()
 
-version = "0.1.8"
+version = "0.1.9"
 
 setup(
     name="Django-ddd",
