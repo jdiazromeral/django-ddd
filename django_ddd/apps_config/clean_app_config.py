@@ -26,4 +26,4 @@ class CleanAppConfig(AppConfig):
         autodiscover_modules(admin_module, register_to=register_to)
 
     def __load_custom_migration_module(self, migration_module: str) -> None:
-        settings.MIGRATION_MODULES.update(**{self.name: f"{self.name}.{migration_module}"})
+        settings.MIGRATION_MODULES.update(**{self.label: f"{self.name}.{migration_module}"})
