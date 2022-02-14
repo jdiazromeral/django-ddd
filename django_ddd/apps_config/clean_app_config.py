@@ -16,7 +16,7 @@ class CleanAppConfig(AppConfig):
         self.__load_custom_models_module()
 
     def __load_custom_models_module(self) -> None:
-        self.models_module = import_module(f"{self.label}.{self.CUSTOM_MODELS_MODULE}")
+        self.models_module = import_module(f"{self.name}.{self.CUSTOM_MODELS_MODULE}")
 
     def ready(self) -> None:
         self.__load_custom_admin_module(self.CUSTOM_ADMIN_MODULE, register_to=site)
@@ -26,4 +26,4 @@ class CleanAppConfig(AppConfig):
         autodiscover_modules(admin_module, register_to=register_to)
 
     def __load_custom_migration_module(self, migration_module: str) -> None:
-        settings.MIGRATION_MODULES.update(**{self.label: f"{self.label}.{migration_module}"})
+        settings.MIGRATION_MODULES.update(**{self.name: f"{self.name}.{migration_module}"})
