@@ -3,7 +3,7 @@ from setuptools import setup
 with open("README.md", "r") as readme:
     README = readme.read()
 
-version = "0.1.10"
+version = "0.1.11"
 
 setup(
     name="Django-ddd",
@@ -19,20 +19,20 @@ setup(
     zip_safe=False,
     include_package_data=True,
     platforms="any",
-    install_requires=["Django>=3.2"],
+    install_requires=["Django>=4.1"],
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Django",
-        "Framework :: Django :: 3.0",
+        "Framework :: Django :: 4.0",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.11",
         "Topic :: Software Development :: Libraries",
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Topic :: Software Development :: Quality Assurance",
         "Topic :: Utilities",
     ],
-    python_requires=">=3.9",
+    python_requires=">=3.11",
 )

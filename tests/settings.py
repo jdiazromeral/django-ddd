@@ -16,7 +16,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_ddd",
-    "dummy_app"
+    "dummy_app.infrastructure.apps.DummyAppConfig"
 ]
 
 CUSTOM_MODELS_MODULE = "infrastructure.models"
@@ -48,3 +48,5 @@ TEMPLATES = [
         },
     },
 ]
+
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
