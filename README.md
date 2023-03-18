@@ -57,7 +57,7 @@ Where Django should look for your app admin configuration.
 ### To use custom locations
 Install django-ddd to your project requirements and add settings so Django 
 can find your apps modules as seen on configuration.
-You don't need to add django-ddd it to `INSTALLED_APPS`
+You don't need to add django-ddd to `INSTALLED_APPS`
 
 Then, on your package `apps.py` import django-ddd custom app config:
 
