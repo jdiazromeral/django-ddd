@@ -66,12 +66,16 @@ Then, on your package `apps.py` import django-ddd custom app config:
     class AppNameConfig(CleanAppConfig):
         name = "app_name" # package folder name
 
-On the app package `__init__.py` add where to find your app config. If it is in 
-`app_name.infrastructure.apps.py`: 
-
-    default_app_config = "app_name.infrastructure.apps.AppNameConfig"
-    
 Add your new application to `INSTALLED_APPS`
+
+```python
+INSTALLED_APPS = [
+    # ...
+    "app_name.infrastructure.apps.AppNameConfig",
+    # ...
+]
+```
+This should be done explicitly [after this ticket](https://code.djangoproject.com/ticket/31180).
 
 ### To use start_clean_app
 This command creates a new Django app with a Domain Driven Design structure. 
